@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Viajes
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,57 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title> Aún no tines viajes reservados</ion-card-title>
+      <ion-card-subtitle>saca las maletas deol closet y comienza a planear tu proximo viaje</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-button expand="block">empieza a buscar</ion-button>
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>luagres donde estuviste</ion-card-title>
+     
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item >
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/stg.jpg" />
+          </ion-thumbnail>
+          <ion-label>Santiago de Chile</ion-label>
+          <ion-card-subtitle>12/12/12</ion-card-subtitle>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/rdj.jpg" />
+          </ion-thumbnail>
+          <ion-label>Rio de janeiro</ion-label>
+          <ion-card-subtitle>12/03/18</ion-card-subtitle>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/idsa.jpg" />
+          </ion-thumbnail>
+          <ion-label>Isla de San Andrés</ion-label>
+          <ion-card-subtitle>01/05/22</ion-card-subtitle>
+        </ion-item>
+  
+        <ion-item >
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/pnc.jpg" />
+          </ion-thumbnail>
+          <ion-label>Parque Nacional Canaima</ion-label>
+          <ion-card-subtitle>21/08/21</ion-card-subtitle>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

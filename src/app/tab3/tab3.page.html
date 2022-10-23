@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Favoritos
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,37 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card >
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item >
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/stg.jpg" />
+          </ion-thumbnail>
+          <ion-label>Santiago de Chile</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/rdj.jpg" />
+          </ion-thumbnail>
+          <ion-label>Rio de janeiro</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/idsa.jpg" />
+          </ion-thumbnail>
+          <ion-label>Isla de San Andrés</ion-label>
+        </ion-item>
+  
+        <ion-item >
+          <ion-thumbnail slot="start">
+            <img alt="img" src="assets/img/pnc.jpg" />
+          </ion-thumbnail>
+          <ion-label>Parque Nacional Canaima</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

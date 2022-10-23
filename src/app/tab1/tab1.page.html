@@ -1,17 +1,55 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  <ion-searchbar [debounce]="1000" (ionChange)="handleChange($event)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let result of results">
+      <ion-label>{{ result }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-card >
+    
+    <img alt="img" src="assets/img/img1.jpg" />
+    <ion-card-header>
+      <ion-card-title>Cancun, Mexico</ion-card-title>
+      <ion-card-subtitle>a xxxxxkm de distancia</ion-card-subtitle>
+      
+    </ion-card-header>
+      <ion-card-content>
+      $80.000 CLP noche
+      <ion-icon name="heart" color="danger" ></ion-icon>
+      </ion-card-content>
+  </ion-card>
+  
+  <ion-card >
+    <img alt="img" src="assets/img/img2.jpg" />
+    <ion-card-header>
+      <ion-card-title>Torres del Paine, Chile</ion-card-title>
+      <ion-card-subtitle>a xxxxxkm de distancia</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      $100.000 CLP noche
+      <ion-icon name="heart" color="danger" ></ion-icon>
+    </ion-card-content>
+  </ion-card>
+  
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+  <img alt="img" src="assets/img/img3.jpg" />
+  <ion-card-header>
+    <ion-card-title>Salto del Angel, Venezuela</ion-card-title>
+    <ion-card-subtitle>a xxxxxxx km de distancia</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    $100.000 CPL noche
+    <ion-icon name="heart" color="danger" ></ion-icon>
+  </ion-card-content>
+
+</ion-card>
+
 </ion-content>
